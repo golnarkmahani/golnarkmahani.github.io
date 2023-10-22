@@ -1,57 +1,57 @@
 [
 
-  
+
     {
       "title"			: "Feature Selection Using RL",
-      "link"			: "https://golnarMahani.github.io/blog/RL-FS/",
+      "link"			: "https://golnarkmahani.github.io/blog/RL-FS/",
       "excerpt"		: "In this post the research works of S. M. Hazrati Fard et al. on the application of Reinforcement Learning to Feature Selection have been reviewed."
     }
-  
 
-  
+
+
     ,{
       "title"			: "Warfarin Therapy Management",
-      "link"			: "https://golnarMahani.github.io/blog/warfarin-therapy-management/",
+      "link"			: "https://golnarkmahani.github.io/blog/warfarin-therapy-management/",
       "excerpt"		: "In this post the research work of B. Yet et al. titled, “Decision support system for Warfarin therapy management using Bayesian networks” has been reviewed."
     }
-  
 
-  
+
+
     ,{
       "title"			: "Facial Expression Recognition",
-      "link"			: "https://golnarMahani.github.io/blog/facial-expression-recognition/",
+      "link"			: "https://golnarkmahani.github.io/blog/facial-expression-recognition/",
       "excerpt"		: "In this post the research paper of L Ma. and K. Khorasani titled, “Facial Expression Recognition Using Constructive Feedforward Neural Networks” has been reviewed."
     }
-  
 
 
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
     ,{
       "title"			: "Curriculum Vitae",
-      "link"			: "https://golnarMahani.github.io/cv/",
+      "link"			: "https://golnarkmahani.github.io/cv/",
       "excerpt"		: ""
     }
-  
 
-  
+
+
     ,{
       "title"			: "About Me",
-      "link"			: "https://golnarMahani.github.io/about/",
+      "link"			: "https://golnarkmahani.github.io/about/",
       "excerpt"		: ""
     }
-  
 
-  
 
-  
 
-  
+
+
+
+
 
 ]
