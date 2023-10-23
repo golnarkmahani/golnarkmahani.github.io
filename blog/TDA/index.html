@@ -1,0 +1,182 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>On the Concept of Topological Data Analysis &#8211; Golnar k. Mahani</title>
+<meta name="description" content="
+">
+<meta name="keywords" content="Topological Data Analysis, Persistent Homology, Simplicial Complex">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="On the Concept of Topological Data Analysis">
+<meta name="twitter:description" content="The presentation slides for my talk at CoNILab Research Group, Sir Peter Mansfield Imaging Centre, University of Nottingham ">
+">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://golnarkmahani.github.io/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="Presentation">
+<meta property="og:title" content="On the Concept of Topological Data Analysis">
+<meta property="og:description" content="
+">
+<meta property="og:url" content="https://golnarkmahani.github.io/blog/TDA/">
+<meta property="og:site_name" content="Golnar k. Mahani">
+
+
+
+
+
+<link rel="canonical" href="https://golnarkmahani.github.io/blog/TDA/">
+<!-- <link href="https://golnarkmahani.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Golnar k. Mahani Feed"> -->
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://golnarkmahani.github.io/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="https://golnarkmahani.github.io/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="https://golnarkmahani.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://golnarkmahani.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://golnarkmahani.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://golnarkmahani.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://golnarkmahani.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://golnarkmahani.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://golnarkmahani.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://golnarkmahani.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+
+
+		    <li><a href="https://golnarkmahani.github.io/about/" >About</a></li>
+
+
+		    <li><a href="https://golnarkmahani.github.io/cv/" >My CV</a></li>
+
+
+		    <li><a href="https://golnarkmahani.github.io/blog/" >Blog</a></li>
+
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="https://golnarkmahani.github.io/tags/#TDA" title="Pages tagged TDA">TDA</a></li><li><a href="https://golnarkmahani.github.io/tags/#Persistent Homology" title="Pages tagged Persistent Homology">Persistent Homology</a></li><li><a href="https://golnarkmahani.github.io/tags/#Simplicial Complex" title="Pages tagged Simplicial Complex">Simplicial Complex</a></li>
+        </ul>
+
+          <h1 class="entry-title">On the Concept of Topological Data Analysis</h1>
+
+      </header>
+      <footer class="entry-meta">
+
+
+          <img src="https://golnarkmahani.github.io/images/golnar-mahani-photo.jpg" class="bio-photo" alt="Golnar Mahani bio photo"></a>
+
+        <span class="author vcard">By <span class="fn">Golnar Mahani</span></span>
+        <span class="entry-date date published"><time datetime="2019-02-1T00:00:00+04:30"><i class="fa fa-calendar-o"></i> February 1, 2019</time></span>
+
+
+
+        </footer>
+      <div class="entry-content">
+				<h3 id="presentation">Presentation</h3>
+	      <iframe src="<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSP5zuFsZ9o_q1GgyWdshfgG0NCEMFyGKNzpQfdKvlBerdtgmnN5O9rskQxYKszXk6adMwJG-_uHy68/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>" width="960" height="569" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+
+        <a href="https://golnarkmahani.github.io/blog/RL-FS/" class="btn" title="Feature Selection Using RL">Previous</a>
+
+
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+
+
+<span>&copy; 2023 Gol Mahani. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>.</span>
+<div class="social-icons">
+
+
+
+	<a href="https://linkedin.com/in/golnar-mahani-ai-cs" title="Golnar Mahani on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+
+
+
+	<a href="https://github.com/golnarkmahani" title="Golnar Mahani on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+
+
+
+  <!-- <a href="https://golnarkmahani.github.io/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a> -->
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'https://golnarkmahani.github.io';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://golnarkmahani.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://golnarkmahani.github.io/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
